@@ -25,19 +25,28 @@ DEFINES += QT_DEPRECATED_WARNINGS
 CONFIG += c++11
 
 SOURCES += \
+        aboutcontrolreadout.cpp \
         main.cpp \
         mainwindow.cpp \
-        pm.cpp
+        pm.cpp \
+        readout.cpp
 
 HEADERS += \
+        aboutcontrolreadout.h \
         mainwindow.h \
-        pm.h
+        pm.h \
+        readout.h
 
 FORMS += \
+        aboutcontrolreadout.ui \
         mainwindow.ui \
-        pm.ui
+        pm.ui \
+        readout.ui
 
 # Default rules for deployment.
 qnx: target.path = /tmp/$${TARGET}/bin
 else: unix:!android: target.path = /opt/$${TARGET}/bin
 !isEmpty(target.path): INSTALLS += target
+
+RESOURCES += \
+    res.qrc

@@ -1,6 +1,7 @@
 #include "mainwindow.h"
 #include "ui_mainwindow.h"
 #include "pm.h"
+#include "readout.h"
 
 
 
@@ -52,4 +53,10 @@ void MainWindow::on_pushButton_2_clicked()
 #define  PMNO 1;
 
     }
+}
+
+void MainWindow::on_pushButton_clicked()
+{
+    read_win=new Readout(this);
+    read_win->show();
 }

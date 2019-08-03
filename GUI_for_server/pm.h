@@ -37,6 +37,20 @@ private slots:
 
     void on_label_3_linkHovered(const QString &link);
 
+    void on_VIEW_ADC_ZERO_clicked();
+
+    void on_VIEW_ADC_DELAY_clicked();
+
+    void on_VIEW_ADC0_OFFSET_clicked();
+
+    void on_VIEW_ADC1_OFFSET_clicked();
+
+    void on_VIEW_ADC0_RANGE_clicked();
+
+    void on_VIEW_ADC1_RANGE_clicked();
+
+    void on_VIEW_TIME_ALIN_clicked();
+
 private:
     Ui::PM *ui;
 
