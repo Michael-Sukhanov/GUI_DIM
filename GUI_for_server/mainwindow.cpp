@@ -2,6 +2,10 @@
 #include "ui_mainwindow.h"
 #include "pm.h"
 
+
+
+
+
 MainWindow::MainWindow(QWidget *parent) :
     QMainWindow(parent),
     ui(new Ui::MainWindow)
@@ -45,5 +49,7 @@ void MainWindow::on_pushButton_2_clicked()
     {
         pm_win_1=new PM(this);
         pm_win_1->show();
+#define  PMNO 1;
+
     }
 }
