@@ -3,6 +3,7 @@
 #include "readout.h"
 #include <QMessageBox>
 #include "aboutcontrolreadout.h"
+#include <QDebug>
 
 Readout::Readout(QWidget *parent) :
     QDialog(parent),
@@ -15,16 +16,24 @@ Readout::Readout(QWidget *parent) :
     ui->Reset_list->addItem("Reset GBT errors");
     ui->Reset_list->addItem("Reset GBT");
     ui->Reset_list->addItem("Reset RX phase error");
-    ui->spinBox_Data->setValue(0);
-    ui->spinBox_Data->setMaximum(2);
-    ui->spinBox_Data->setMinimum(0);
-    ui->spinBox_Trigger->setValue(0);
-    ui->spinBox_Trigger->setMinimum(0);
-    ui->spinBox_Trigger->setMaximum(1);
-    ui->spinBox_RC->setRange(0,4);
-    ui->spinBox_RC->setValue(0);
-
-
+    ui->comboBox_Data->addItem("0-No Generator");
+    ui->comboBox_Data->addItem("1-Main Generator");
+    ui->comboBox_Data->addItem("2-TX Generator");
+    ui->comboBox_Trigger->addItem("0-No Generator");
+    ui->comboBox_Trigger->addItem("1-Continuous");
+    ui->comboBox_Readout->addItem("1-SOC");
+    ui->comboBox_Readout->addItem("2-SOT");
+    ui->comboBox_Readout->addItem("3-EOC");
+    ui->comboBox_Readout->addItem("4-SOC");
+    ui->pushButton_2->setText("");
+    ui->pushButton_2->setFixedHeight(26);
+    ui->pushButton_2->setFixedWidth(26);
+    QRect rect(0,0,26,26);
+    qDebug() << rect.size();
+    qDebug() << ui->pushButton_2->size();
+    QRegion region(rect, QRegion::Ellipse);
+    qDebug() << region.boundingRect().size();
+    ui->pushButton_2->setMask(region);
 
 }
 

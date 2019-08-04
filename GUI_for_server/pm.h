@@ -4,6 +4,9 @@
 #include <QDialog>
 #include<QString>
 
+
+
+
 namespace Ui {
 class PM;
 }
@@ -13,7 +16,7 @@ class PM : public QDialog
     Q_OBJECT
 
 public:
-    explicit PM(QWidget *parent = nullptr);
+    explicit PM(int No=0, QWidget *parent = nullptr);
 
 
     ~PM();
@@ -21,7 +24,7 @@ public:
 
 
 private slots:
-    void on_ADC_ZERO_INFO_clicked();
+   /* void on_ADC_ZERO_INFO_clicked();
 
     void on_ADC_DELAY_INFO_clicked();
 
@@ -49,7 +52,7 @@ private slots:
 
     void on_VIEW_ADC1_RANGE_clicked();
 
-    void on_VIEW_TIME_ALIN_clicked();
+    void on_VIEW_TIME_ALIN_clicked();*/
 
 private:
     Ui::PM *ui;

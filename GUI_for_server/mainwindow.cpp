@@ -44,15 +44,15 @@ MainWindow::~MainWindow()
 
 void MainWindow::on_pushButton_2_clicked()
 {
-    QString PM_NO;
-    PM_NO=ui->PM_list->currentItem()->text();
-    if(PM_NO=="PM 1")
-    {
-        pm_win_1=new PM(this);
+
+    int PMno=ui->PM_list->currentIndex();
+
+
+        pm_win_1=new PM(PMno+1, this);
         pm_win_1->show();
 #define  PMNO 1;
 
-    }
+
 }
 
 void MainWindow::on_pushButton_clicked()
