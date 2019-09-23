@@ -1,0 +1,19 @@
+<RCC>
+    <qresource prefix="/skins">
+        <file>eyeball-icon-png-3.png</file>
+        <file>img_519799.png</file>
+        <file>question.png</file>
+        <file>Read.jpg</file>
+        <file>Write.png</file>
+        <file>img_235563.png</file>
+        <file>PM.png</file>
+        <file>RO_control.png</file>
+        <file>RO_status.png</file>
+        <file>Strelka.png</file>
+        <file>save.png</file>
+        <file>load.png</file>
+        <file>black.png</file>
+        <file>light.png</file>
+        <file>Clear.png</file>
+    </qresource>
+</RCC>
